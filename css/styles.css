@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*BARRA SCROLL*/
+
+body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    background-color: #eee;
+}
+
+body::-webkit-scrollbar:vertical{
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button{
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal{
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    border:2px solid #807B7B;
+    border-radius: 10px;
+    background-color: #807B7B; 
+}
+
+
+
+/*SPACER*/
+.spacer{
+    margin-top: 150px;
+}
+
+
+/* HEADER TAG */
+
+.header--nav-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    color: #eee;
+}
+
+.header--nav-title{
+    text-shadow: 5px 5px 10px #000;
+}
+
+.header--nav-menu{
+    list-style: none;
+    padding: 5px 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,24,24,1) 0%, rgba(134,33,33,1) 100%);
+    border-radius: 20px;
+}
+
+.nav--menu-item{
+    cursor: pointer;
+    padding: 0 5px;
+    border-radius: 10px;
+    transition: .2s background-color, color;
+}
+
+.nav--menu-item:hover{
+    background-color: rgba(255, 255, 255, .2);
+    color: rgba(108,24,24,1);
+}
+
+.nav--menu-item a{
+    text-decoration: none;
+    color: #eee;
+}
+
+/*  MAIN TAG */ 
+
+
+.main--section-slider{
+    height: 100vh;
+    position: relative;
+}
+
+.section--slider-img{
+    height: 100vh;
+    filter: grayscale(100%);
+}
+
+.section--slider-text{
+    z-index: 5;
+    color: #eee;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 5px 5px 10px #000;
+}
+
+/*SECTION COTIZA*/
+
+.main--section-cotiza{
+    height: 100vh;
+    background-color: #eee;
+}
+
+.cotiza--text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.cotiza--box{
+    height: 500px;
+    width: 90%;
+    border: 1px solid #807B7B;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2); 
+    border-radius: 2px;
+}
+
+.cotiza--box-title{
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    color: #807B7B;
+    font-size: 1.2em;
+}
+
+.cotiza--box-title.active:Before{
+    content:'';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    border:2px solid rgba(108,24,24,1);
+    width: 100%;
+}
+
+.cotiza--box-title:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+.cotiza--box-img{
+    height: 40px;
+}
+
+.cotiza--data{
+    padding: 20px;
+}
+
+.cotiza--form-row{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+
+.cotiza--form-row label{
+}
+
+.cotiza--form-row input,
+.cotiza--form-row select,
+.cotiza--form-row textarea{
+    padding: 3px 5px;
+    border: 1px solid #807B7B;
+    border-radius: 2px;
+    box-shadow: 1px 1px 8px #807B7B;
+}
+
+.cotiza--form-row select{
+    padding: 6px;
+}
+
+
+.cotiza--form-submit{
+    margin-top: 20px;
+}
+
+.cotiza--form-submit div{
+    border-top: 2px solid #807B7B;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cotiza--form-submit button{
+    margin-top: 10px;
+    padding: 5px 0px;
+    border:1px solid rgba(108,24,24,1);
+    background-color: rgba(108,24,24,1);
+    color: #eee;
+    border-radius: 10px;
+    width: 120px;
+    transition: .3s opacity;
+}
+
+.cotiza--form-submit button:hover{
+    opacity: .9;
+}
+
+.cotiza--form-submit button:active{
+    transform: scale(.9);
+}
+

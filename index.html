@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>JARR - Asesores de Seguros</title>
+</head>
+<body>
+    
+    <header class="p-4 header--nav-fixed">
+        <div class="text-center">
+            <h1 class="header--nav-title">JARR Seguros</h1>
+        </div>
+        <nav>
+            <ul class="d-flex justify-content-evenly header--nav-menu">
+                <li class="nav--menu-item"><a href="#cotiza"> Cotizá tu seguro</a></li>
+                <li class="nav--menu-item"><a href=""> Productos</a></li>
+                <li class="nav--menu-item"><a href="">Compañías</a></li>
+                <li class="nav--menu-item"><a href="">Conocenos</a></li>
+                <li class="nav--menu-item"><a href="">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main--section-slider">
+            <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/b62c3d4808ce11cabf190c56e1a85be8.jpeg" class="d-block w-100 section--slider-img" alt="background">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/revision_auto_viaje_6869.jpeg" class="d-block w-100 section--slider-img" alt="background">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/Viaje-en-auto-1200x900.jpeg" class="d-block w-100 section--slider-img" alt="background">
+                  </div> 
+                </div>
+                <div class="text-center section--slider-text">
+                    <h2>Nosotros te cuidamos</h2>
+                    <h3>Viví más tranquilo</h3>
+                </div>
+                <!--<button class="carousel-control-prev" type="button" data-bs-target="slider" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="slider" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>-->
+            </div>
+        </section>
+        
+        <section class="main--section-cotiza" id="cotiza">
+            <div class="row w-100">
+              <div class="col-4 spacer cotiza--text">
+                <div>
+                  <img src="assets/hacker.png" id="img--hacker">
+                </div>
+                <div>
+                  Pasanos tus datos y los de tu vehículo, <br>
+                  nosotros realizamos la mejor cotización <br>
+                  en relación precio-calidad.
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="spacer cotiza--box">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="cotiza--box-title active" id="cotiza--btn-datos">
+                        <img class="cotiza--box-img" src="assets/portapapeles.png">
+                        <span>Datos</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="cotiza--box-title" id="cotiza--btn-vehiculo">
+                        <img class="cotiza--box-img" src="assets/coche.png">
+                        <span>Vehículo</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="cotiza--box-title" id="cotiza--btn-imagenes">
+                        <img class="cotiza--box-img" src="assets/image.png">
+                        <span>Imágenes</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <form class="cotiza--data">
+                      <div id="cotiza--data">
+
+                      </div>
+                      <div class="cotiza--form-submit">
+                        <div>
+                          <button>Cotiza</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
