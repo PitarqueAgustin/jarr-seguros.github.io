@@ -11,28 +11,28 @@
 
 /*BARRA SCROLL*/
 
-body::-webkit-scrollbar{
+*::-webkit-scrollbar{
     -webkit-appearance: none;
     background-color: #eee;
 }
 
-body::-webkit-scrollbar:vertical{
+*::-webkit-scrollbar:vertical{
     width: 10px;
     height: 10px;
 }
 
-body::-webkit-scrollbar-button:increment,
-body::-webkit-scrollbar-button{
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button{
     display: none;
 }
 
-body::-webkit-scrollbar:horizontal{
+*::-webkit-scrollbar:horizontal{
     height: 10px;
 }
 
-body::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb{
     border:2px solid #807B7B;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: #807B7B; 
 }
 
@@ -180,10 +180,29 @@ body::-webkit-scrollbar-thumb{
     box-shadow: 1px 1px 8px #807B7B;
 }
 
+.cotiza--form-row input[type="file"]{
+    border: none;
+}
+
 .cotiza--form-row select{
     padding: 6px;
 }
 
+.cotiza--form-row .row--img{
+    height: 250px;
+    width: 100%;
+    border: 1px solid #807B7B;
+    border-radius: 2px;
+    background-color: #fff;
+    text-align: center;
+    overflow-y: scroll;
+    display: block;
+}
+
+.cotiza--form-row .row--img img{
+    max-height: 100%;
+    max-width: 100%;
+}
 
 .cotiza--form-submit{
     margin-top: 20px;

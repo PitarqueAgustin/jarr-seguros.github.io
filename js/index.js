@@ -133,5 +133,27 @@ function showVehiculo(){
 }
 
 function showImagenes(){
-	boxCotiza.innerHTML = ''
+	boxCotiza.innerHTML = 
+	`
+		<div class="cotiza--form-row">
+			<div class="row--img" id="row--img">
+			</div>
+		</div>
+		<div class="cotiza--form-row">
+			<input type="file" name="file" id="file" multiple>
+		</div>
+	`
+
+	var file = document.querySelector('#file')
+
+	file.onchange = () =>{
+		for(let i = 0; i < file.files.length; i++){
+			var objectUrl = URL.createObjectURL(file.files[i])
+			document.querySelector('#row--img').innerHTML += `
+			<div>
+				<img src="${objectUrl}">
+			</div>
+			`
+		}
+	}
 }
